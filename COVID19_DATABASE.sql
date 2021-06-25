@@ -155,16 +155,16 @@ INSERT INTO CABINA VALUES('Final 25 Avenida Norte y 27 Calle Poniente San Salvad
 
 
 --INSERTANDO VALORES A TABLE EMPLEADO
-INSERT INTO EMPLEADO VALUES(1,'Gerardo Henriquez','gerardohenriquez@salud.gob.sv','miralvalle, san salvador, casa #P10','GerardoHqz','pikachu123',1);
-INSERT INTO EMPLEADO VALUES(2,'Juanca Galindo','JuancaGalindo@salud.gob.sv','Colonia La Campanera, Soyapango, casa #18',null,null,3);
-INSERT INTO EMPLEADO VALUES(3,'Paolo Duenas','PaoloDuenas@salud.gob.sv','Arcos de Santa Elena,Calla de Verapaz, #E-11','Paolin','paolin',1);
-INSERT INTO EMPLEADO VALUES(4,'Karen Martinez','KarenMartinez@salud.gob.sv','Colonia Altos de Guadalupe, casa #209','KarenMartz','karen123',1);
-INSERT INTO EMPLEADO VALUES(5,'Angel Vasquez','AngelVasquez@salud.gob.sv','Colonia Libertad av. Washington casa n° 56 San Salvador','AVasquez','angel123',1);
-INSERT INTO EMPLEADO VALUES(6,'Monolo Diaz','ManoloDiaz@salud.gob.sv','Condado Santa Elena, Casa #29',null,null,2);
-INSERT INTO EMPLEADO VALUES(7,'Marvin Rodriguez','MarvinRodriguez@salud.gob.sv','Bosquez de Lourdes, casa #9,Lourde Colon',null,null,2);
-INSERT INTO EMPLEADO VALUES(8,'Dolores Delano','DoloresDelano@salud.gob.sv','Ave.Bernald, casa #63, San Salvador',null,null,2);
-INSERT INTO EMPLEADO VALUES(9,'Walter Morales','WalterMorales@salud.gob.sv','Residencial Las Acasias, casa #18, Lourdes Colon',null,null,2);
-INSERT INTO EMPLEADO VALUES(10,'Diego Maradona','DiegoMaradona@salud.gob.sv','Ave.Paraiso, Residencial Los Angeles, casa #10',null,null,5);
+INSERT INTO EMPLEADO VALUES(1,'Gerardo Henriquez','gerardohenriquez@salud.gob.sv','miralvalle, san salvador, casa #P10','GerardoHqz','pikachu123',1,1);
+INSERT INTO EMPLEADO VALUES(2,'Juanca Galindo','JuancaGalindo@salud.gob.sv','Colonia La Campanera, Soyapango, casa #18',null,null,3,1);
+INSERT INTO EMPLEADO VALUES(3,'Paolo Duenas','PaoloDuenas@salud.gob.sv','Arcos de Santa Elena,Calla de Verapaz, #E-11','Paolin','paolin',1,2);
+INSERT INTO EMPLEADO VALUES(4,'Karen Martinez','KarenMartinez@salud.gob.sv','Colonia Altos de Guadalupe, casa #209','KarenMartz','karen123',1,3);
+INSERT INTO EMPLEADO VALUES(5,'Angel Vasquez','AngelVasquez@salud.gob.sv','Colonia Libertad av. Washington casa n° 56 San Salvador','AVasquez','angel123',1,4);
+INSERT INTO EMPLEADO VALUES(6,'Monolo Diaz','ManoloDiaz@salud.gob.sv','Condado Santa Elena, Casa #29',null,null,2,4);
+INSERT INTO EMPLEADO VALUES(7,'Marvin Rodriguez','MarvinRodriguez@salud.gob.sv','Bosquez de Lourdes, casa #9,Lourde Colon',null,null,2,4);
+INSERT INTO EMPLEADO VALUES(8,'Dolores Delano','DoloresDelano@salud.gob.sv','Ave.Bernald, casa #63, San Salvador',null,null,2,3);
+INSERT INTO EMPLEADO VALUES(9,'Walter Morales','WalterMorales@salud.gob.sv','Residencial Las Acasias, casa #18, Lourdes Colon',null,null,2,3);
+INSERT INTO EMPLEADO VALUES(10,'Diego Maradona','DiegoMaradona@salud.gob.sv','Ave.Paraiso, Residencial Los Angeles, casa #10',null,null,5,1);
 
 --INSERTANDO VALORES A TABLA LUGAR 
 INSERT INTO LUGAR VALUES('Hospital El Salvador');
@@ -228,10 +228,5 @@ select * from EMPLEADO
 select * from ciudadano
 select * from CITA
 
-select EMPLEADO.nombre,CABINA.direccion
-from EMPLEADO, EMPLEADOXHISTORIAL,CABINA,HISTORIAL
-where EMPLEADO.identificador = EMPLEADOXHISTORIAL.id_empleado
-	and EMPLEADOXHISTORIAL.id_historial = HISTORIAL.id 
-	and HISTORIAL.id_cabina = CABINA.id
 
 

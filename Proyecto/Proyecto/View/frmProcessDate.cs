@@ -83,29 +83,37 @@ namespace Proyecto.View
                         db.Add(people);
                         db.SaveChanges();
 
-                        //Añadiendo la cita a la BD
-                        DateTime date = RandomDate();
-                        Citum NewDate = new Citum
+                        if (nudAge.Value > 60 && nudIdentificator.Value != 0)
                         {
-                            FechaHora = date,
-                            IdentificadorCita = 1,
-                            //Sabiendo ya el gestor que ingreso debere buscar la cabina en donde esta
-                            //de momento hare quemado los datos
-                            IdLugar = 1,
-                            IdentificadorEmpleado = id_employee,
-                            IdCiudadano = id
-                        };
-                        db.Add(NewDate);
-                        db.SaveChanges();
+                            //Añadiendo la cita a la BD
+                            DateTime date = RandomDate();
+                            Citum NewDate = new Citum
+                            {
+                                FechaHora = date,
+                                IdentificadorCita = 1,
+                                //Sabiendo ya el gestor que ingreso debere buscar la cabina en donde esta
+                                //de momento hare quemado los datos
+                                IdLugar = 1,
+                                IdentificadorEmpleado = id_employee,
+                                IdCiudadano = id
+                            };
+                            db.Add(NewDate);
+                            db.SaveChanges();
 
-                        //recuerda el id de lugar esta quemado
-                        string place = "Hospital El Salvador";
-                        string message = string.Format("Datos ingresados exitosamente" +
-                            "\nCita realizada: " + date + "\nLugar: " + place);
-                        MessageBox.Show(message, "Covid-19 Vacunacion", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+                            //recuerda el id de lugar esta quemado
+                            string place = "Hospital El Salvador";
+                            string message = string.Format("Datos ingresados exitosamente" +
+                                "\nCita realizada: " + date + "\nLugar: " + place);
+                            MessageBox.Show(message, "Covid-19 Vacunacion", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
 
-                        Clean();
+                            Clean();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Aun no es tu turno del ciudadano, espere atentamente noticias del gobierno ", "Covid-19 Vacunacion",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
@@ -121,13 +129,13 @@ namespace Proyecto.View
         DateTime RandomDate()
         {
             //DateTime aux = new DateTime(2022, 12, 31)
-            DateTime start = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day,
-                DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Millisecond);
+            DateTime start = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
             int range = (new DateTime(2022, 12, 31) - start).Days;
-            return start.AddDays(gen.Next(range));
+            return start.AddDays(gen.Next(range)).AddHours(gen.Next(8,16)).AddMinutes(gen.Next(0,60));
         }
 
-        //Funcion para limpiar
+        //Funcion para limpia
+
         private void Clean()
         {
             txtDui.Text = "";
