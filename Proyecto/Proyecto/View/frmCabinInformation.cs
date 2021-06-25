@@ -26,7 +26,6 @@ namespace Proyecto.View
         {
             foreach (Control btns in this.Controls)
             {
-                //Prueba de terminal en VSCode
                 if (btns.GetType() == typeof(Button))
                 {
                     Button btn = (Button)btns;

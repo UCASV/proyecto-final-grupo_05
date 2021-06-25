@@ -24,7 +24,7 @@ namespace Proyecto
             main.Show();
             this.Hide();
         }
-        //probando el merge
+
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

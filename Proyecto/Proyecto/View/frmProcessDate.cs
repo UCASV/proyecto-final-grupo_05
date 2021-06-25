@@ -35,8 +35,5 @@ namespace Proyecto.View
                 }
             }
         }
-
-        //Comando para ver si funciona el merge prueba de sonido unos dos tres xd
-        //Haber que ondas pasa aqui
     }
 }

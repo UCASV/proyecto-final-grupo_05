@@ -37,4 +37,3 @@ namespace Proyecto.View
         }
     }
 }
-//Aqui la prueba de VSCode

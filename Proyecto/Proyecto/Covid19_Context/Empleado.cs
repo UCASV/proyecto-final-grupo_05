@@ -11,6 +11,7 @@ namespace Proyecto.Covid19_Context
         {
             Cita = new HashSet<Citum>();
             Ciudadanos = new HashSet<Ciudadano>();
+            Empleadoxhistorials = new HashSet<Empleadoxhistorial>();
         }
 
         public int Identificador { get; set; }
@@ -19,7 +20,6 @@ namespace Proyecto.Covid19_Context
         public string Direccion { get; set; }
         public string Usuario { get; set; }
         public string Contrasenia { get; set; }
-        public DateTime? FechaHoraRegistro { get; set; }
         public int IdTipo { get; set; }
         public int IdCabina { get; set; }
 
@@ -27,5 +27,6 @@ namespace Proyecto.Covid19_Context
         public virtual Tipo IdTipoNavigation { get; set; }
         public virtual ICollection<Citum> Cita { get; set; }
         public virtual ICollection<Ciudadano> Ciudadanos { get; set; }
+        public virtual ICollection<Empleadoxhistorial> Empleadoxhistorials { get; set; }
     }
 }

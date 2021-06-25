@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J0JzuukgQ83HQD4faYI8cqANHdZojdhZw3xBqcf37nJI7ObFBWCLydZp7I79wvuLoZgByKbS31wGCeuw4Bw3jg==",
+  "dgSpecHash": "dCE0BE4a+kv3BhwPV4pC48wW8Tz4jcfoFRjYR4FBgDdsAbPQL0xMH4JHQ27m1LHYHdI+L0W/jRZvORzvVChESQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerar\\Pictures\\Workspace\\GameOfTech_Repositorio\\Team Fusion\\TeamFusion\\Proyecto\\Proyecto\\Proyecto.csproj",
+  "projectFilePath": "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerar\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\gerar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

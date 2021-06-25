@@ -10,6 +10,7 @@ namespace Proyecto.Covid19_Context
         public Cabina()
         {
             Empleados = new HashSet<Empleado>();
+            Historials = new HashSet<Historial>();
         }
 
         public int Id { get; set; }
@@ -18,5 +19,6 @@ namespace Proyecto.Covid19_Context
         public string Email { get; set; }
 
         public virtual ICollection<Empleado> Empleados { get; set; }
+        public virtual ICollection<Historial> Historials { get; set; }
     }
 }

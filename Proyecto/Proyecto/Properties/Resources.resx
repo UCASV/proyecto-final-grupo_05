@@ -157,14 +157,20 @@
   <data name="icon-vaccine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-vaccine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ico pdf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico pdf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1039373" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1039373.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="informacion ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\informacion ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-map-location-place-blue-dotted-line-line-icon-png-image_1616146 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-map-location-place-blue-dotted-line-line-icon-png-image_1616146 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screenshot 2021-06-22 221330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2021-06-22 221330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img Proceso Cita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img Proceso Cita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,11 +193,17 @@
   <data name="5921" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5921.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1329661" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1329661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-map-location-place-blue-dotted-line-line-icon-png-image_1616146 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-map-location-place-blue-dotted-line-line-icon-png-image_1616146 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Campaña contra covid-19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Campaña contra covid-19.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,8 +223,8 @@
   <data name="Campañas-de-sens-e-info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Campañas-de-sens-e-info.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1329661" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1329661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ico pdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico pdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3e166ce201d044ebe362249870413751-icono-de-inyecci-oacute-n-de-vacunaci-oacute-n-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3e166ce201d044ebe362249870413751-icono-de-inyecci-oacute-n-de-vacunaci-oacute-n-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,7 +232,7 @@
   <data name="info2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Screenshot 2021-06-22 221330" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2021-06-22 221330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ico user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
