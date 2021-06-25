@@ -39,13 +39,14 @@ namespace Proyecto.View
             this.label7 = new System.Windows.Forms.Label();
             this.txtDui = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.x = new System.Windows.Forms.TextBox();
+            this.txtDirection = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtIdentificator = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExport = new System.Windows.Forms.Button();
+            this.nudIdentificator = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIdentificator)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegister
@@ -61,6 +62,7 @@ namespace Proyecto.View
             this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label1
             // 
@@ -146,12 +148,12 @@ namespace Proyecto.View
             this.txtNombre.Size = new System.Drawing.Size(315, 23);
             this.txtNombre.TabIndex = 10;
             // 
-            // x
+            // txtDirection
             // 
-            this.x.Location = new System.Drawing.Point(99, 185);
-            this.x.Name = "x";
-            this.x.Size = new System.Drawing.Size(315, 23);
-            this.x.TabIndex = 11;
+            this.txtDirection.Location = new System.Drawing.Point(99, 185);
+            this.txtDirection.Name = "txtDirection";
+            this.txtDirection.Size = new System.Drawing.Size(315, 23);
+            this.txtDirection.TabIndex = 11;
             // 
             // txtPhone
             // 
@@ -166,13 +168,6 @@ namespace Proyecto.View
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(315, 23);
             this.txtEmail.TabIndex = 13;
-            // 
-            // txtIdentificator
-            // 
-            this.txtIdentificator.Location = new System.Drawing.Point(605, 141);
-            this.txtIdentificator.Name = "txtIdentificator";
-            this.txtIdentificator.Size = new System.Drawing.Size(137, 23);
-            this.txtIdentificator.TabIndex = 14;
             // 
             // pictureBox1
             // 
@@ -198,17 +193,24 @@ namespace Proyecto.View
             this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExport.UseVisualStyleBackColor = true;
             // 
+            // nudIdentificator
+            // 
+            this.nudIdentificator.Location = new System.Drawing.Point(607, 141);
+            this.nudIdentificator.Name = "nudIdentificator";
+            this.nudIdentificator.Size = new System.Drawing.Size(135, 23);
+            this.nudIdentificator.TabIndex = 17;
+            // 
             // frmProcessDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 474);
+            this.Controls.Add(this.nudIdentificator);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtIdentificator);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.x);
+            this.Controls.Add(this.txtDirection);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtDui);
             this.Controls.Add(this.label7);
@@ -224,6 +226,7 @@ namespace Proyecto.View
             this.Text = "frmProcessDate";
             this.Load += new System.EventHandler(this.frmProcessDate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIdentificator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,11 +243,11 @@ namespace Proyecto.View
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDui;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox x;
+        private System.Windows.Forms.TextBox txtDirection;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtIdentificator;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.NumericUpDown nudIdentificator;
     }
 }
