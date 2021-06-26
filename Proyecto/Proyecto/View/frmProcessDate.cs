@@ -165,14 +165,13 @@ namespace Proyecto.View
         private Random gen = new Random();
         DateTime RandomDate()
         {
-            //DateTime aux = new DateTime(2022, 12, 31)
+            //Se ha definido que se espera que se deje de agendar citas hasta el año 2022 diciembre
             DateTime start = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
             int range = (new DateTime(2022, 12, 31) - start).Days;
             return start.AddDays(gen.Next(range)).AddHours(gen.Next(8,16)).AddMinutes(gen.Next(0,60));
         }
 
         //Funcion para limpia
-
         private void Clean()
         {
             txtDui.Text = "";
@@ -195,18 +194,23 @@ namespace Proyecto.View
                 if(sfd.ShowDialog() == DialogResult.OK)
                 {
                     FileStream fileS = new FileStream(sfd.FileName, FileMode.Create);
-                    Document doc = new Document(PageSize.LETTER, 5, 5, 7, 7);
+                    Document doc = new Document(PageSize.LETTER, 7, 7, 9, 9);
                     PdfWriter pdf = PdfWriter.GetInstance(doc, fileS);
                     doc.Open();
                     //definimos la fuente que utilizaremos
-                    iTextSharp.text.Font fuente = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8,
+                    iTextSharp.text.Font fuente = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 14,
                         iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
-                    doc.Add(new Paragraph("                                      CITA PARA PROCESO DE VACUNACION COVID-19"));
+                    iTextSharp.text.Font fuente2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 18,
+                        iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+                    doc.Add(new Paragraph("                                            CITA PARA PROCESO DE VACUNACION COVID-19",fuente2));
                     doc.Add(Chunk.NEWLINE);
-                    doc.Add(new Paragraph("          Nombre: " + txtNombre.Text));
-                    doc.Add(new Paragraph("          DUI: " + txtDui.Text));
-                    doc.Add(new Paragraph("          Fecha y hora: " + date));
-                    doc.Add(new Paragraph("          Lugar: " + NamePlace));
+                    doc.Add(new Paragraph("                 Nombre: " + txtNombre.Text,fuente));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 DUI: " + txtDui.Text,fuente));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 Fecha y hora: " + date,fuente));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 Lugar: " + NamePlace,fuente));           
 
                     doc.Close();
                     pdf.Close();
