@@ -29,7 +29,6 @@ namespace Proyecto.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVacProcss_DatetimeEntry = new System.Windows.Forms.Button();
             this.lblDateEntry = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dTp_VacPrcss_entry = new System.Windows.Forms.DateTimePicker();
@@ -37,15 +36,13 @@ namespace Proyecto.View
             this.label2 = new System.Windows.Forms.Label();
             this.txtVacProcss_dui = new System.Windows.Forms.TextBox();
             this.lbl_FechaHoraentry = new System.Windows.Forms.Label();
-            this.btnVacProcss_DatetimeExit = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.dTp_VacPrcss_exit = new System.Windows.Forms.DateTimePicker();
             this.lbl_EfectosSecundarios = new System.Windows.Forms.Label();
-            this.btnVacProcss_RegistrEffect = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtVacProcss_minute = new System.Windows.Forms.TextBox();
+            this.nUdVacProcss_minute = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbVacProcss_Effects = new System.Windows.Forms.ComboBox();
@@ -53,36 +50,24 @@ namespace Proyecto.View
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnVacProcss_RegistrData = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nUdVacProcss_minute)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnVacProcss_DatetimeEntry
-            // 
-            this.btnVacProcss_DatetimeEntry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVacProcss_DatetimeEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVacProcss_DatetimeEntry.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnVacProcss_DatetimeEntry.Location = new System.Drawing.Point(557, 104);
-            this.btnVacProcss_DatetimeEntry.Name = "btnVacProcss_DatetimeEntry";
-            this.btnVacProcss_DatetimeEntry.Size = new System.Drawing.Size(195, 74);
-            this.btnVacProcss_DatetimeEntry.TabIndex = 0;
-            this.btnVacProcss_DatetimeEntry.Text = "Registrar entrada";
-            this.btnVacProcss_DatetimeEntry.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVacProcss_DatetimeEntry.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVacProcss_DatetimeEntry.UseVisualStyleBackColor = true;
-            this.btnVacProcss_DatetimeEntry.Click += new System.EventHandler(this.btnVacProcss_DatetimeEntry_Click);
-            // 
             // lblDateEntry
             // 
             this.lblDateEntry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDateEntry.AutoSize = true;
             this.lblDateEntry.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateEntry.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblDateEntry.Location = new System.Drawing.Point(34, 27);
             this.lblDateEntry.Name = "lblDateEntry";
             this.lblDateEntry.Size = new System.Drawing.Size(50, 20);
@@ -126,7 +111,7 @@ namespace Proyecto.View
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.27957F));
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtVacProcss_dui, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(392, 17);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(159, 12);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.73913F));
@@ -165,21 +150,6 @@ namespace Proyecto.View
             this.lbl_FechaHoraentry.TabIndex = 5;
             this.lbl_FechaHoraentry.Text = "Fecha y hora de llegada del ciudadano";
             // 
-            // btnVacProcss_DatetimeExit
-            // 
-            this.btnVacProcss_DatetimeExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVacProcss_DatetimeExit.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnVacProcss_DatetimeExit.Location = new System.Drawing.Point(557, 245);
-            this.btnVacProcss_DatetimeExit.Name = "btnVacProcss_DatetimeExit";
-            this.btnVacProcss_DatetimeExit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnVacProcss_DatetimeExit.Size = new System.Drawing.Size(195, 70);
-            this.btnVacProcss_DatetimeExit.TabIndex = 1;
-            this.btnVacProcss_DatetimeExit.Text = "Registrar vacunacion";
-            this.btnVacProcss_DatetimeExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVacProcss_DatetimeExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVacProcss_DatetimeExit.UseVisualStyleBackColor = true;
-            this.btnVacProcss_DatetimeExit.Click += new System.EventHandler(this.btnVacProcss_DatetimeExit_Click);
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(88)))), ((int)(((byte)(124)))));
@@ -200,6 +170,7 @@ namespace Proyecto.View
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(33, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 20);
@@ -229,34 +200,19 @@ namespace Proyecto.View
             this.lbl_EfectosSecundarios.TabIndex = 5;
             this.lbl_EfectosSecundarios.Text = "Efectos secundarios";
             // 
-            // btnVacProcss_RegistrEffect
-            // 
-            this.btnVacProcss_RegistrEffect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVacProcss_RegistrEffect.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnVacProcss_RegistrEffect.Image = global::Proyecto.Properties.Resources.efectosec2;
-            this.btnVacProcss_RegistrEffect.Location = new System.Drawing.Point(557, 382);
-            this.btnVacProcss_RegistrEffect.Name = "btnVacProcss_RegistrEffect";
-            this.btnVacProcss_RegistrEffect.Size = new System.Drawing.Size(195, 70);
-            this.btnVacProcss_RegistrEffect.TabIndex = 0;
-            this.btnVacProcss_RegistrEffect.Text = "Registrar efectos";
-            this.btnVacProcss_RegistrEffect.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVacProcss_RegistrEffect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVacProcss_RegistrEffect.UseVisualStyleBackColor = true;
-            this.btnVacProcss_RegistrEffect.Click += new System.EventHandler(this.btnVacProcss_RegistrEffect_Click);
-            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(88)))), ((int)(((byte)(124)))));
             this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.45198F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.54802F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.89265F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.10735F));
             this.tableLayoutPanel6.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.txtVacProcss_minute, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.nUdVacProcss_minute, 1, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(15, 15);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.73913F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(177, 70);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(157, 70);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // label8
@@ -264,40 +220,39 @@ namespace Proyecto.View
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(3, 15);
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 40);
+            this.label8.Size = new System.Drawing.Size(65, 70);
             this.label8.TabIndex = 3;
             this.label8.Text = "Minutos en que surgieron:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.UseWaitCursor = true;
             // 
-            // txtVacProcss_minute
+            // nUdVacProcss_minute
             // 
-            this.txtVacProcss_minute.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVacProcss_minute.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtVacProcss_minute.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtVacProcss_minute.Location = new System.Drawing.Point(110, 22);
-            this.txtVacProcss_minute.Name = "txtVacProcss_minute";
-            this.txtVacProcss_minute.Size = new System.Drawing.Size(64, 25);
-            this.txtVacProcss_minute.TabIndex = 4;
+            this.nUdVacProcss_minute.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nUdVacProcss_minute.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nUdVacProcss_minute.Location = new System.Drawing.Point(83, 22);
+            this.nUdVacProcss_minute.Name = "nUdVacProcss_minute";
+            this.nUdVacProcss_minute.Size = new System.Drawing.Size(64, 25);
+            this.nUdVacProcss_minute.TabIndex = 4;
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(88)))), ((int)(((byte)(124)))));
             this.tableLayoutPanel7.CausesValidation = false;
             this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.8983F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.10169F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.44162F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.55837F));
             this.tableLayoutPanel7.Controls.Add(this.label9, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.cmbVacProcss_Effects, 1, 0);
             this.tableLayoutPanel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(198, 15);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(178, 15);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.73913F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(177, 70);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(197, 70);
             this.tableLayoutPanel7.TabIndex = 4;
             // 
             // label9
@@ -305,7 +260,8 @@ namespace Proyecto.View
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(4, 25);
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.Location = new System.Drawing.Point(3, 25);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 20);
             this.label9.TabIndex = 3;
@@ -317,9 +273,9 @@ namespace Proyecto.View
             this.cmbVacProcss_Effects.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbVacProcss_Effects.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbVacProcss_Effects.FormattingEnabled = true;
-            this.cmbVacProcss_Effects.Location = new System.Drawing.Point(74, 21);
+            this.cmbVacProcss_Effects.Location = new System.Drawing.Point(65, 21);
             this.cmbVacProcss_Effects.Name = "cmbVacProcss_Effects";
-            this.cmbVacProcss_Effects.Size = new System.Drawing.Size(88, 28);
+            this.cmbVacProcss_Effects.Size = new System.Drawing.Size(123, 28);
             this.cmbVacProcss_Effects.TabIndex = 4;
             // 
             // lbl_FechaHoraExit
@@ -364,6 +320,19 @@ namespace Proyecto.View
             this.panel3.Size = new System.Drawing.Size(390, 95);
             this.panel3.TabIndex = 6;
             // 
+            // btnVacProcss_RegistrData
+            // 
+            this.btnVacProcss_RegistrData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVacProcss_RegistrData.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVacProcss_RegistrData.Location = new System.Drawing.Point(557, 382);
+            this.btnVacProcss_RegistrData.Name = "btnVacProcss_RegistrData";
+            this.btnVacProcss_RegistrData.Size = new System.Drawing.Size(195, 70);
+            this.btnVacProcss_RegistrData.TabIndex = 0;
+            this.btnVacProcss_RegistrData.Text = "Registrar datos";
+            this.btnVacProcss_RegistrData.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVacProcss_RegistrData.UseVisualStyleBackColor = true;
+            this.btnVacProcss_RegistrData.Click += new System.EventHandler(this.btnVacProcss_RegistrData_Click);
+            // 
             // frmVaccinationProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -374,14 +343,12 @@ namespace Proyecto.View
             this.Controls.Add(this.lbl_EfectosSecundarios);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.btnVacProcss_RegistrEffect);
+            this.Controls.Add(this.btnVacProcss_RegistrData);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.btnVacProcss_DatetimeExit);
-            this.Controls.Add(this.btnVacProcss_DatetimeEntry);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmVaccinationProcess";
-            this.Text = "frmVaccinationProcess";
+            this.Text = "Proceso de vacunacion";
             this.Load += new System.EventHandler(this.frmVaccinationProcess_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -391,6 +358,7 @@ namespace Proyecto.View
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nUdVacProcss_minute)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -402,22 +370,17 @@ namespace Proyecto.View
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnVacProcss_DatetimeEntry;
         private System.Windows.Forms.Label lblDateEntry;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtVacProcss_dui;
         private System.Windows.Forms.Label lbl_FechaHoraentry;
-        private System.Windows.Forms.Button btnVacProcss_DatetimeExit;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_EfectosSecundarios;
-        private System.Windows.Forms.Button btnVacProcss_RegistrEffect;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtVacProcss_minute;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbVacProcss_Effects;
@@ -427,5 +390,7 @@ namespace Proyecto.View
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DateTimePicker dTp_VacPrcss_entry;
         private System.Windows.Forms.DateTimePicker dTp_VacPrcss_exit;
+        private System.Windows.Forms.NumericUpDown nUdVacProcss_minute;
+        private System.Windows.Forms.Button btnVacProcss_RegistrData;
     }
 }
