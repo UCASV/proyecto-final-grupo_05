@@ -29,11 +29,10 @@ namespace Proyecto.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFollowDate));
             this.btnExportFollowDate = new System.Windows.Forms.Button();
             this.lblAppointment = new System.Windows.Forms.Label();
             this.txtDui = new System.Windows.Forms.TextBox();
-            this.lblEnterDui = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,16 +71,16 @@ namespace Proyecto.View
             this.txtDui.Size = new System.Drawing.Size(283, 27);
             this.txtDui.TabIndex = 20;
             // 
-            // lblEnterDui
+            // label2
             // 
-            this.lblEnterDui.AutoSize = true;
-            this.lblEnterDui.BackColor = System.Drawing.SystemColors.Control;
-            this.lblEnterDui.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEnterDui.Location = new System.Drawing.Point(51, 275);
-            this.lblEnterDui.Name = "lblEnterDui";
-            this.lblEnterDui.Size = new System.Drawing.Size(143, 33);
-            this.lblEnterDui.TabIndex = 19;
-            this.lblEnterDui.Text = "Ingrese DUI:";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(51, 275);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 33);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Ingrese DUI:";
             // 
             // btnCheck
             // 
@@ -116,12 +115,11 @@ namespace Proyecto.View
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.txtDui);
-            this.Controls.Add(this.lblEnterDui);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblAppointment);
             this.Controls.Add(this.btnExportFollowDate);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFollowDate";
-            this.Text = "Vacuna Covid-19: Seguimiento de Cita";
+            this.Text = "frmFollowDate";
             this.Load += new System.EventHandler(this.frmFollowDate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -134,7 +132,7 @@ namespace Proyecto.View
         private System.Windows.Forms.Button btnExportFollowDate;
         private System.Windows.Forms.Label lblAppointment;
         private System.Windows.Forms.TextBox txtDui;
-        private System.Windows.Forms.Label lblEnterDui;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

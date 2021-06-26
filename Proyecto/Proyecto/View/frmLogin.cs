@@ -15,7 +15,7 @@ namespace Proyecto
 {
     public partial class frmLogin : Form
     {
-        
+
 
         public frmLogin()
         {
@@ -28,17 +28,17 @@ namespace Proyecto
         private void btnLogin_Click(object sender, EventArgs e)
         {
             connection.Open(); //iniciando la conexion
-            SqlCommand employee = new SqlCommand("SELECT usuario,contrasenia FROM EMPLEADO WHERE usuario= @vusuario AND contrasenia= @vcontrasenia",connection);
+            SqlCommand employee = new SqlCommand("SELECT usuario,contrasenia FROM EMPLEADO WHERE usuario= @vusuario AND contrasenia= @vcontrasenia", connection);
 
             //dandole valor a los parametros
-            employee.Parameters.AddWithValue("@vusuario",txtUser.Text); // recibe nombre y valor, parametro usuario
-            employee.Parameters.AddWithValue("@vcontrasenia",txtPassword.Text); // parametro contraseña
+            employee.Parameters.AddWithValue("@vusuario", txtUser.Text); // recibe nombre y valor, parametro usuario
+            employee.Parameters.AddWithValue("@vcontrasenia", txtPassword.Text); // parametro contraseña
 
             //obtener resultado
             SqlDataReader outcome = employee.ExecuteReader();
 
             //enviar datos a la base de datos 
-            if(outcome.Read())
+            if (outcome.Read() == true)
             {
                 connection.Close(); //cerrando la conexion
                 frmMainMenu main = new frmMainMenu();
@@ -46,7 +46,7 @@ namespace Proyecto
                 //this.Hide();
 
             }
-            else if (outcome.Read()==false)
+            else if (outcome.Read() == false)
             {
                 MessageBox.Show("¡El usuario no existe!", "Vacunacion Covid-19",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
