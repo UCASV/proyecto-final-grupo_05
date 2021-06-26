@@ -29,21 +29,113 @@ namespace Proyecto.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFollowDate));
+            this.btnExportFollowDate = new System.Windows.Forms.Button();
+            this.lblAppointment = new System.Windows.Forms.Label();
+            this.txtDui = new System.Windows.Forms.TextBox();
+            this.lblEnterDui = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnExportFollowDate
+            // 
+            this.btnExportFollowDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportFollowDate.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExportFollowDate.Image = global::Proyecto.Properties.Resources.ico_pdf1;
+            this.btnExportFollowDate.Location = new System.Drawing.Point(519, 508);
+            this.btnExportFollowDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExportFollowDate.Name = "btnExportFollowDate";
+            this.btnExportFollowDate.Size = new System.Drawing.Size(275, 100);
+            this.btnExportFollowDate.TabIndex = 17;
+            this.btnExportFollowDate.Text = "     Exportar Datos";
+            this.btnExportFollowDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExportFollowDate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExportFollowDate.UseVisualStyleBackColor = true;
+            // 
+            // lblAppointment
+            // 
+            this.lblAppointment.AutoSize = true;
+            this.lblAppointment.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAppointment.Location = new System.Drawing.Point(284, 121);
+            this.lblAppointment.Name = "lblAppointment";
+            this.lblAppointment.Size = new System.Drawing.Size(110, 44);
+            this.lblAppointment.TabIndex = 18;
+            this.lblAppointment.Text = "Citas";
+            // 
+            // txtDui
+            // 
+            this.txtDui.Location = new System.Drawing.Point(242, 281);
+            this.txtDui.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDui.Name = "txtDui";
+            this.txtDui.Size = new System.Drawing.Size(283, 27);
+            this.txtDui.TabIndex = 20;
+            // 
+            // lblEnterDui
+            // 
+            this.lblEnterDui.AutoSize = true;
+            this.lblEnterDui.BackColor = System.Drawing.SystemColors.Control;
+            this.lblEnterDui.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEnterDui.Location = new System.Drawing.Point(51, 275);
+            this.lblEnterDui.Name = "lblEnterDui";
+            this.lblEnterDui.Size = new System.Drawing.Size(143, 33);
+            this.lblEnterDui.TabIndex = 19;
+            this.lblEnterDui.Text = "Ingrese DUI:";
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheck.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCheck.Image = global::Proyecto.Properties.Resources.Circle_icons_check_svg__2_;
+            this.btnCheck.Location = new System.Drawing.Point(77, 508);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(275, 100);
+            this.btnCheck.TabIndex = 21;
+            this.btnCheck.Text = "Verificar";
+            this.btnCheck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheck.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCheck.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto.Properties.Resources.listado_123;
+            this.pictureBox1.Location = new System.Drawing.Point(563, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(325, 448);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // frmFollowDate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 474);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ClientSize = new System.Drawing.Size(914, 632);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.txtDui);
+            this.Controls.Add(this.lblEnterDui);
+            this.Controls.Add(this.lblAppointment);
+            this.Controls.Add(this.btnExportFollowDate);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFollowDate";
-            this.Text = "frmFollowDate";
+            this.Text = "Vacuna Covid-19: Seguimiento de Cita";
             this.Load += new System.EventHandler(this.frmFollowDate_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnExportFollowDate;
+        private System.Windows.Forms.Label lblAppointment;
+        private System.Windows.Forms.TextBox txtDui;
+        private System.Windows.Forms.Label lblEnterDui;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

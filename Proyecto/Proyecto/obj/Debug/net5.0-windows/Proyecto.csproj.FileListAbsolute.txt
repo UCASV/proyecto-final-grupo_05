@@ -156,3 +156,21 @@ C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\
 C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\ref\Proyecto.dll
 C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.pdb
 C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.genruntimeconfig.cache
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.csprojAssemblyReference.cache
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.Properties.Resources.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmCabinInformation.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmEmployeeInformation.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmFollowDate.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.frmLogin.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmMainMenu.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmProcessDate.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmSecondDose.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmVaccinationProcess.resources
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.csproj.GenerateResource.cache
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.AssemblyInfoInputs.cache
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.AssemblyInfo.cs
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.dll
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\ref\Proyecto.dll
+C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.pdb
