@@ -45,8 +45,11 @@ namespace Proyecto.View
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExport = new System.Windows.Forms.Button();
             this.nudIdentificator = new System.Windows.Forms.NumericUpDown();
-            this.nudAge = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
+            this.nudAge = new System.Windows.Forms.NumericUpDown();
+            this.clbDiseases = new System.Windows.Forms.CheckedListBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnClean = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdentificator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
@@ -57,7 +60,7 @@ namespace Proyecto.View
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.Image = global::Proyecto.Properties.Resources.ico_user;
-            this.btnRegister.Location = new System.Drawing.Point(515, 270);
+            this.btnRegister.Location = new System.Drawing.Point(515, 233);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(241, 75);
             this.btnRegister.TabIndex = 1;
@@ -131,7 +134,7 @@ namespace Proyecto.View
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(443, 169);
+            this.label7.Location = new System.Drawing.Point(443, 172);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 23);
             this.label7.TabIndex = 8;
@@ -175,9 +178,9 @@ namespace Proyecto.View
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto.Properties.Resources.Img_Proceso_Cita;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 262);
+            this.pictureBox1.Location = new System.Drawing.Point(304, 301);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(295, 210);
+            this.pictureBox1.Size = new System.Drawing.Size(148, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -187,7 +190,7 @@ namespace Proyecto.View
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExport.Image = global::Proyecto.Properties.Resources.ico_pdf1;
-            this.btnExport.Location = new System.Drawing.Point(515, 374);
+            this.btnExport.Location = new System.Drawing.Point(515, 329);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(241, 75);
             this.btnExport.TabIndex = 16;
@@ -195,38 +198,84 @@ namespace Proyecto.View
             this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // nudIdentificator
             // 
-            this.nudIdentificator.Location = new System.Drawing.Point(605, 169);
+            this.nudIdentificator.Location = new System.Drawing.Point(605, 172);
             this.nudIdentificator.Name = "nudIdentificator";
             this.nudIdentificator.Size = new System.Drawing.Size(135, 23);
             this.nudIdentificator.TabIndex = 17;
-            // 
-            // nudAge
-            // 
-            this.nudAge.Location = new System.Drawing.Point(605, 127);
-            this.nudAge.Name = "nudAge";
-            this.nudAge.Size = new System.Drawing.Size(135, 23);
-            this.nudAge.TabIndex = 18;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(538, 127);
+            this.label8.Location = new System.Drawing.Point(538, 125);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 23);
-            this.label8.TabIndex = 19;
+            this.label8.TabIndex = 18;
             this.label8.Text = "Edad:";
+            // 
+            // nudAge
+            // 
+            this.nudAge.Location = new System.Drawing.Point(605, 130);
+            this.nudAge.Name = "nudAge";
+            this.nudAge.Size = new System.Drawing.Size(137, 23);
+            this.nudAge.TabIndex = 19;
+            // 
+            // clbDiseases
+            // 
+            this.clbDiseases.CheckOnClick = true;
+            this.clbDiseases.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.clbDiseases.FormattingEnabled = true;
+            this.clbDiseases.Items.AddRange(new object[] {
+            "Diabetes M",
+            "Hipertensión",
+            "Cardiopatías",
+            "Obesidad Morb",
+            "Cáncer",
+            "Insuficiencia Renal",
+            "Ninguna"});
+            this.clbDiseases.Location = new System.Drawing.Point(90, 311);
+            this.clbDiseases.Name = "clbDiseases";
+            this.clbDiseases.Size = new System.Drawing.Size(165, 151);
+            this.clbDiseases.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(14, 285);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(182, 23);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Enfermedades Crónicas:";
+            // 
+            // btnClean
+            // 
+            this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClean.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClean.Location = new System.Drawing.Point(515, 419);
+            this.btnClean.Name = "btnClean";
+            this.btnClean.Size = new System.Drawing.Size(241, 52);
+            this.btnClean.TabIndex = 22;
+            this.btnClean.Text = "     Limpiar";
+            this.btnClean.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClean.UseVisualStyleBackColor = true;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // frmProcessDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 474);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnClean);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.clbDiseases);
             this.Controls.Add(this.nudAge);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.nudIdentificator);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.pictureBox1);
@@ -245,7 +294,6 @@ namespace Proyecto.View
             this.Controls.Add(this.btnRegister);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmProcessDate";
-            this.Text = "frmProcessDate";
             this.Load += new System.EventHandler(this.frmProcessDate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdentificator)).EndInit();
@@ -272,7 +320,10 @@ namespace Proyecto.View
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.NumericUpDown nudIdentificator;
-        private System.Windows.Forms.NumericUpDown nudAge;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.NumericUpDown nudAge;
+        private System.Windows.Forms.CheckedListBox clbDiseases;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnClean;
     }
 }

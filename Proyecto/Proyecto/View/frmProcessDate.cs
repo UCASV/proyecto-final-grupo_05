@@ -7,12 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Proyecto.Covid19_Context;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Proyecto.View
 {
     public partial class frmProcessDate : Form
     {
+        private string NamePlace;
+        private DateTime date;
         public frmProcessDate()
         {
             InitializeComponent();
@@ -40,11 +45,21 @@ namespace Proyecto.View
         private void btnRegister_Click(object sender, EventArgs e)
         {
             //varible para hacer respectivas validaciones
+            bool verificatonCLB = false;
+            for (int i=0; i < clbDiseases.Items.Count; i++)
+            {
+                if(clbDiseases.GetItemChecked(i) == true)
+                {
+                    verificatonCLB = true;
+                    i += 8;
+                }
+            }
             bool verification =
                 txtDui.Text.Length == 10 &&
                 txtNombre.Text.Length > 15 &&
                 txtDirection.Text.Length > 10 &&
-                txtPhone.Text.Length >= 8;
+                txtPhone.Text.Length >= 8 &&
+                verificatonCLB == true;
 
             if (verification)
             {
@@ -58,9 +73,11 @@ namespace Proyecto.View
                 //Se necesita el id del gestor de alguna manera
                 //momentaneamente sera id del trabajador 1 *Dato quemado*
                 int id_employee = 1;
+
                 using (var db = new COVID19_DATABASEContext())
                 {
                     List<Ciudadano> citizens = db.Ciudadanos.ToList();
+                    List<Lugar> places = db.Lugars.ToList();
                     List<Ciudadano> exist = citizens.Where(u => u.Dui == id).ToList();
                     if (exist.Count() > 0)
                     {
@@ -69,45 +86,65 @@ namespace Proyecto.View
                     }
                     else
                     {
-                        //Añadiendolos datos del ciudadno a la BD
-                        Ciudadano people = new Ciudadano
+                        if (nudAge.Value >= 60 || nudIdentificator.Value != 0 || (clbDiseases.GetItemChecked(6) == false && nudAge.Value >=18))
                         {
-                            Dui = id,
-                            Nombre = name,
-                            Direccion = direction,
-                            Telefono = phone,
-                            Email = @email,
-                            NumeroIdentificador = identificator,
-                            IdentificadorEmpleado = id_employee
-                        };
-                        db.Add(people);
-                        db.SaveChanges();
+                            //Añadiendolos datos del ciudadno a la BD
+                            Ciudadano people = new Ciudadano
+                            {
+                                Dui = id,
+                                Nombre = name,
+                                Direccion = direction,
+                                Telefono = phone,
+                                Email = @email,
+                                NumeroIdentificador = identificator,
+                                IdentificadorEmpleado = id_employee
+                            };
 
-                        if (nudAge.Value > 60 && nudIdentificator.Value != 0)
-                        {
+                            db.Add(people);
+                            db.SaveChanges();
+
+                            for (int i=0; i < clbDiseases.Items.Count; i++)
+                            {
+                                if (clbDiseases.GetItemChecked(i) == true)
+                                {
+                                    string value = clbDiseases.Items[i].ToString();
+                                    Enfermedad disease = new Enfermedad
+                                    {
+                                        Enfermedad1 = value,
+                                        IdCiudadano = txtDui.Text
+                                    };
+                                    db.Add(disease);
+                                    db.SaveChanges();
+                                }
+                            }
                             //Añadiendo la cita a la BD
-                            DateTime date = RandomDate();
+                            Random id_Place = new Random();
+                            int aux = id_Place.Next(1, (places.Count + 1));
+                            date = RandomDate();
                             Citum NewDate = new Citum
                             {
                                 FechaHora = date,
                                 IdentificadorCita = 1,
                                 //Sabiendo ya el gestor que ingreso debere buscar la cabina en donde esta
                                 //de momento hare quemado los datos
-                                IdLugar = 1,
+                                IdLugar = aux,
                                 IdentificadorEmpleado = id_employee,
                                 IdCiudadano = id
                             };
                             db.Add(NewDate);
                             db.SaveChanges();
 
+                            //Buscando el nombre del lugar de la cita
+                            foreach (var element in places)
+                            {
+                                if (element.Id == aux)
+                                    NamePlace = element.Lugar1;
+                            }
                             //recuerda el id de lugar esta quemado
-                            string place = "Hospital El Salvador";
                             string message = string.Format("Datos ingresados exitosamente" +
-                                "\nCita realizada: " + date + "\nLugar: " + place);
+                                "\nCita realizada: " + date + "\nLugar: " + NamePlace);
                             MessageBox.Show(message, "Covid-19 Vacunacion", MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
-
-                            Clean();
                         }
                         else
                         {
@@ -128,14 +165,13 @@ namespace Proyecto.View
         private Random gen = new Random();
         DateTime RandomDate()
         {
-            //DateTime aux = new DateTime(2022, 12, 31)
+            //Se ha definido que se espera que se deje de agendar citas hasta el año 2022 diciembre
             DateTime start = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
             int range = (new DateTime(2022, 12, 31) - start).Days;
             return start.AddDays(gen.Next(range)).AddHours(gen.Next(8,16)).AddMinutes(gen.Next(0,60));
         }
 
         //Funcion para limpia
-
         private void Clean()
         {
             txtDui.Text = "";
@@ -144,6 +180,47 @@ namespace Proyecto.View
             txtPhone.Text = "";
             txtEmail.Text = "";
             nudIdentificator.Value = 0;
+            nudAge.Value = 0;
+            for(int i = 0; i < clbDiseases.Items.Count; i++)
+            {
+                clbDiseases.SetItemChecked(i, false);
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            using(SaveFileDialog sfd = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true })
+            {
+                if(sfd.ShowDialog() == DialogResult.OK)
+                {
+                    FileStream fileS = new FileStream(sfd.FileName, FileMode.Create);
+                    Document doc = new Document(PageSize.LETTER, 7, 7, 9, 9);
+                    PdfWriter pdf = PdfWriter.GetInstance(doc, fileS);
+                    doc.Open();
+                    //definimos la fuente que utilizaremos
+                    iTextSharp.text.Font fuente = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 14,
+                        iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+                    iTextSharp.text.Font fuente2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 18,
+                        iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+                    doc.Add(new Paragraph("                      CITA PARA PROCESO DE VACUNACION COVID-19",fuente2));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 Nombre: " + txtNombre.Text,fuente));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 DUI: " + txtDui.Text,fuente));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 Fecha y hora: " + date,fuente));
+                    doc.Add(Chunk.NEWLINE);
+                    doc.Add(new Paragraph("                 Lugar: " + NamePlace,fuente));           
+
+                    doc.Close();
+                    pdf.Close();
+                }
+            }
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
