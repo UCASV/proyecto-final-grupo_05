@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "HQVo1Y88Uv5b9RTwgEe2tnzi9v+2cER3nAl5ZVJaHqUSl8Pvznf0Klb2D12SfyJ6zF2ovvJDW6MpeGnvWtlWTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\khare\\Desktop\\PROYECTO BASES Y POO CICLO 2.2021\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
@@ -108,6 +109,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
   "expectedPackageFiles": [
+=======
+  "dgSpecHash": "5XtdjkI7zVcCj03iXJ0JT+phm3VlmJAP7rOY766N+sxXiP4iSAxTMBIRRxWjV0BFmpbn6f7zfnNgy/cODP+GbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+  "expectedPackageFiles": [
+>>>>>>> SecondDose
     "C:\\Users\\lynet\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\lynet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lynet\\.nuget\\packages\\itextsharp\\5.5.13.2\\itextsharp.5.5.13.2.nupkg.sha512",
@@ -206,7 +213,10 @@
     "C:\\Users\\lynet\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\lynet\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\lynet\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> VaccinationProcess
+=======
+>>>>>>> SecondDose
   ],
   "logs": [
     {

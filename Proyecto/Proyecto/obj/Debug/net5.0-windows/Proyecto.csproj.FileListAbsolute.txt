@@ -157,6 +157,7 @@ C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\
 C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.pdb
 C:\Users\gerar\Pictures\Workspace\POO\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.genruntimeconfig.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\Proyecto.exe
 C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\Proyecto.deps.json
 C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\Proyecto.runtimeconfig.json
@@ -224,6 +225,8 @@ C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05
 C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.pdb
 C:\Users\khare\Desktop\PROYECTO BASES Y POO CICLO 2.2021\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.genruntimeconfig.cache
 =======
+=======
+>>>>>>> SecondDose
 C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\Proyecto.exe
 C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\Proyecto.deps.json
 C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\Proyecto.runtimeconfig.json
@@ -290,4 +293,7 @@ C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\P
 C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.pdb
 C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.genruntimeconfig.cache
 C:\Users\lynet\OneDrive\Desktop\Paolo\Respositorio 4.0\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 >>>>>>> VaccinationProcess
+=======
+>>>>>>> SecondDose

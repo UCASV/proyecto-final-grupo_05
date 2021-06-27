@@ -5812,39 +5812,39 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\khare\\.nuget\\packages\\": {},
+
+    "C:\\Users\\lynet\\.nuget\\packages\\": {},
 =======
     "C:\\Users\\lynet\\.nuget\\packages\\": {},
->>>>>>> VaccinationProcess
+>>>>>>> SecondDose
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\khare\\Desktop\\PROYECTO BASES Y POO CICLO 2.2021\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+
+      "projectUniqueName": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
-      "projectPath": "C:\\Users\\khare\\Desktop\\PROYECTO BASES Y POO CICLO 2.2021\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
-      "packagesPath": "C:\\Users\\khare\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khare\\Desktop\\PROYECTO BASES Y POO CICLO 2.2021\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
+      "projectPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "packagesPath": "C:\\Users\\lynet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
 =======
       "projectUniqueName": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
       "projectPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
       "packagesPath": "C:\\Users\\lynet\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
->>>>>>> VaccinationProcess
+>>>>>>> SecondDose
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\khare\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
+        "C:\\Users\\lynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\lynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> VaccinationProcess
+>>>>>>> SecondDose
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5908,11 +5908,11 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
->>>>>>> VaccinationProcess
+>>>>>>> SecondDose
       }
     }
   },

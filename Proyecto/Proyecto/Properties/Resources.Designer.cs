@@ -184,16 +184,6 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap efectosec2 {
-            get {
-                object obj = ResourceManager.GetObject("efectosec2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap gratis_png_icono_localizador_de_google_map_iconos_de_computadora_ubicacion {
             get {
                 object obj = ResourceManager.GetObject("gratis-png-icono-localizador-de-google-map-iconos-de-computadora-ubicacion", resourceCulture);
@@ -277,6 +267,16 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap imagen_gobierno_bukele {
             get {
                 object obj = ResourceManager.GetObject("imagen-gobierno-bukele", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagenvacun {
+            get {
+                object obj = ResourceManager.GetObject("imagenvacun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,16 +385,6 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap llegar {
-            get {
-                object obj = ResourceManager.GetObject("llegar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap logo_covid {
             get {
                 object obj = ResourceManager.GetObject("logo-covid", resourceCulture);
@@ -448,16 +438,6 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap Screenshot_2021_06_22_221330 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2021-06-22 221330", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap vacunacion {
-            get {
-                object obj = ResourceManager.GetObject("vacunacion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
