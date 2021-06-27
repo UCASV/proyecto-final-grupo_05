@@ -92,11 +92,6 @@ namespace Proyecto.View
                         MessageBox.Show("Su cita para la segunda dosis sera el " + newDateCitum, "Covid-19 Vacunación",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    else
-                    {
-                        MessageBox.Show("Datos Inválidos, verifique el ingreso de los datos", "Covid-19 Vacunación",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
                 }
                 else
                 {
