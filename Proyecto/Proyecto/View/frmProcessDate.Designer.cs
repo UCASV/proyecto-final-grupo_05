@@ -256,7 +256,6 @@ namespace Proyecto.View
             // 
             this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClean.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClean.Image = global::Proyecto.Properties.Resources.basura1;
             this.btnClean.Location = new System.Drawing.Point(515, 419);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(241, 52);

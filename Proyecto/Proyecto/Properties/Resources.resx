@@ -224,6 +224,7 @@
     <value>..\Resources\imagen-gobierno-bukele.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <data name="3271220" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3271220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 =======
@@ -233,6 +234,10 @@
   <data name="ico pdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico pdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 >>>>>>> ProcesoCita
+=======
+  <data name="3271220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3271220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> FollowDate
   </data>
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -248,9 +253,18 @@
   </data>
   <data name="ico user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+<<<<<<< HEAD
+=======
   </data>
-  <data name="ico user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ico user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="info2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> FollowDate
+  </data>
+  <data name="Circle-icons-check.svg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circle-icons-check.svg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listado-123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listado-123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

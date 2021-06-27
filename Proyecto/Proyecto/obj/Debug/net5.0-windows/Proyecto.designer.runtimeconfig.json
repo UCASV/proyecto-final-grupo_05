@@ -6,7 +6,11 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\gerar\\.dotnet\\store\\|arch|\\|tfm|",
+=======
+      "C:\\Users\\khare\\.dotnet\\store\\|arch|\\|tfm|",
+>>>>>>> FollowDate
       "C:\\Users\\khare\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
