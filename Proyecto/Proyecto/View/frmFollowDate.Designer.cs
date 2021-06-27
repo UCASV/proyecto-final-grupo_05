@@ -29,6 +29,7 @@ namespace Proyecto.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFollowDate));
             this.btnExportFollowDate = new System.Windows.Forms.Button();
             this.lblAppointment = new System.Windows.Forms.Label();
             this.txtDui = new System.Windows.Forms.TextBox();
@@ -96,6 +97,7 @@ namespace Proyecto.View
             this.btnCheck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCheck.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // pictureBox1
             // 
@@ -118,8 +120,9 @@ namespace Proyecto.View
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblAppointment);
             this.Controls.Add(this.btnExportFollowDate);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFollowDate";
-            this.Text = "frmFollowDate";
+            this.Text = "Vacuna Covid-19: Seguimiento de Cita";
             this.Load += new System.EventHandler(this.frmFollowDate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
