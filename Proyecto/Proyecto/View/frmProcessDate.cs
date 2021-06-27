@@ -202,7 +202,9 @@ namespace Proyecto.View
                         iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
                     iTextSharp.text.Font fuente2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 18,
                         iTextSharp.text.Font.BOLD, BaseColor.BLACK);
-                    doc.Add(new Paragraph("                      CITA PARA PROCESO DE VACUNACION COVID-19",fuente2));
+                    iTextSharp.text.Paragraph title = new iTextSharp.text.Paragraph("INFORMACIÓN DE EMPLEADOS", fuente2);
+                    title.Alignment = Element.ALIGN_CENTER;
+                    doc.Add(title);
                     doc.Add(Chunk.NEWLINE);
                     doc.Add(new Paragraph("                 Nombre: " + txtNombre.Text,fuente));
                     doc.Add(Chunk.NEWLINE);

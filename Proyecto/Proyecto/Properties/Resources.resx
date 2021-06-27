@@ -223,11 +223,6 @@
   <data name="imagen-gobierno-bukele" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagen-gobierno-bukele.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <data name="3271220" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3271220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 =======
 =======
@@ -237,23 +232,14 @@
   <data name="3e166ce201d044ebe362249870413751-icono-de-inyecci-oacute-n-de-vacunaci-oacute-n-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3e166ce201d044ebe362249870413751-icono-de-inyecci-oacute-n-de-vacunaci-oacute-n-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ico pdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico pdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 >>>>>>> ProcesoCita
 =======
   <data name="3271220" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3271220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> FollowDate
-=======
->>>>>>> VaccinationProcess
-=======
->>>>>>> SecondDose
-  </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+</data>
     <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Campañas-de-sens-e-info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Campañas-de-sens-e-info.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -265,9 +251,7 @@
   </data>
   <data name="ico user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 =======
 =======
 >>>>>>> VaccinationProcess
@@ -278,8 +262,7 @@
     <value>..\Resources\info2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 >>>>>>> FollowDate
   </data>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   <data name="Circle-icons-check.svg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Circle-icons-check.svg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -289,17 +272,13 @@
   <data name="info2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="Circle-icons-check.svg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Circle-icons-check.svg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="listado-123" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\listado-123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="basura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="basura1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basura1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 >>>>>>> ProcesoCita
 =======
@@ -309,7 +288,6 @@
   <data name="llegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\llegar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="efectosec2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\efectosec2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 >>>>>>> VaccinationProcess
 =======
