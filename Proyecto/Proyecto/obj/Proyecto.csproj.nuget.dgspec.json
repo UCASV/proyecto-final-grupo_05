@@ -3,6 +3,7 @@
   "restore": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\khare\\Desktop\\PROYECTO BASES Y POO CICLO 2.2021\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj": {}
   },
   "projects": {
@@ -40,11 +41,25 @@
         "packagesPath": "C:\\Users\\lynet\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
 >>>>>>> SecondDose
+=======
+    "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+        "projectName": "Proyecto",
+        "projectPath": "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+        "packagesPath": "C:\\Users\\Ángel Vásquez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
+>>>>>>> EmployeeAndCabinInformation
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           "C:\\Users\\khare\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,6 +69,9 @@
 =======
           "C:\\Users\\lynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> SecondDose
+=======
+          "C:\\Users\\Ángel Vásquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> EmployeeAndCabinInformation
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -119,6 +137,7 @@
           },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
@@ -126,6 +145,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
 >>>>>>> SecondDose
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+>>>>>>> EmployeeAndCabinInformation
         }
       }
     }

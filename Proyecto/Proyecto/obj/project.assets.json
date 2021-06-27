@@ -5812,39 +5812,34 @@
     ]
   },
   "packageFolders": {
+    "C:\\Users\\lynet\\.nuget\\packages\\": {},
 
-    "C:\\Users\\lynet\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\lynet\\.nuget\\packages\\": {},
->>>>>>> SecondDose
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+      "projectUniqueName": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "projectName": "Proyecto",
+      "projectPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "packagesPath": "C:\\Users\\lynet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
 
-      "projectUniqueName": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "projectUniqueName": "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
-      "projectPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
-      "packagesPath": "C:\\Users\\lynet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
-      "projectName": "Proyecto",
-      "projectPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
-      "packagesPath": "C:\\Users\\lynet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lynet\\OneDrive\\Desktop\\Paolo\\Respositorio 4.0\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
->>>>>>> SecondDose
+      "projectPath": "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+      "packagesPath": "C:\\Users\\Ángel Vásquez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ángel Vásquez\\Documents\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
+
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+        "C:\\Users\\lynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
 
-        "C:\\Users\\lynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\lynet\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> SecondDose
+        "C:\\Users\\Ángel Vásquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5908,11 +5903,10 @@
             "privateAssets": "none"
           }
         },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
 
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
->>>>>>> SecondDose
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+
       }
     }
   },

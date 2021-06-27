@@ -35,5 +35,24 @@ namespace Proyecto.View
                 }
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (var context = new Covid19_Context.COVID19_DATABASEContext())
+            {
+                var newDS = context.Empleados.ToList();
+                dataGridView1.DataSource = newDS;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

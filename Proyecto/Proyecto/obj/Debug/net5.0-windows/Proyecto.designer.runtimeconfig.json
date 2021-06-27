@@ -7,6 +7,7 @@
     },
     "additionalProbingPaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       "C:\\Users\\Ángel Vásquez\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\gerar\\.nuget\\packages",
 =======
@@ -21,6 +22,10 @@
       "C:\\Users\\lynet\\.nuget\\packages",
 >>>>>>> SecondDose
 >>>>>>> 72a660550178a200c97a615fa2e31da256661798
+=======
+      "C:\\Users\\Ángel Vásquez\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Ángel Vásquez\\.nuget\\packages",
+>>>>>>> EmployeeAndCabinInformation
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

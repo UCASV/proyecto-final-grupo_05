@@ -111,7 +111,11 @@ namespace Proyecto.Covid19_Context
             modelBuilder.Entity<Ciudadano>(entity =>
             {
                 entity.HasKey(e => e.Dui)
+<<<<<<< HEAD
                     .HasName("PK__CIUDADAN__D876F1BED5EFCC07");
+=======
+                    .HasName("PK__CIUDADAN__D876F1BEFD5E896F");
+>>>>>>> EmployeeAndCabinInformation
 
                 entity.ToTable("CIUDADANO");
 
@@ -169,7 +173,11 @@ namespace Proyecto.Covid19_Context
             modelBuilder.Entity<Empleado>(entity =>
             {
                 entity.HasKey(e => e.Identificador)
+<<<<<<< HEAD
                     .HasName("PK__EMPLEADO__C83612B16653B343");
+=======
+                    .HasName("PK__EMPLEADO__C83612B1D9B7B55C");
+>>>>>>> EmployeeAndCabinInformation
 
                 entity.ToTable("EMPLEADO");
 
