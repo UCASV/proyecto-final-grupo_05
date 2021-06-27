@@ -63,16 +63,6 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1014d788c38e421f79132fcccc4ab843__1_ {
-            get {
-                object obj = ResourceManager.GetObject("1014d788c38e421f79132fcccc4ab843 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _1039373 {
             get {
                 object obj = ResourceManager.GetObject("1039373", resourceCulture);
@@ -164,26 +154,6 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Circle_icons_check_svg__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Circle-icons-check.svg (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Circle_icons_check_svg__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Circle-icons-check.svg (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap close_grey {
             get {
                 object obj = ResourceManager.GetObject("close_grey", resourceCulture);
@@ -214,9 +184,9 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap descarga {
+        internal static System.Drawing.Bitmap efectosec2 {
             get {
-                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                object obj = ResourceManager.GetObject("efectosec2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -415,9 +385,9 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap listado_123 {
+        internal static System.Drawing.Bitmap llegar {
             get {
-                object obj = ResourceManager.GetObject("listado-123", resourceCulture);
+                object obj = ResourceManager.GetObject("llegar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -485,9 +455,9 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sign_check_icon__1_ {
+        internal static System.Drawing.Bitmap vacunacion {
             get {
-                object obj = ResourceManager.GetObject("Sign-check-icon (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("vacunacion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

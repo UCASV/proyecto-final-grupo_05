@@ -7,7 +7,11 @@
     },
     "additionalProbingPaths": [
       "C:\\Users\\lynet\\.dotnet\\store\\|arch|\\|tfm|",
+<<<<<<< HEAD
       "C:\\Users\\khare\\.nuget\\packages",
+=======
+      "C:\\Users\\lynet\\.nuget\\packages",
+>>>>>>> VaccinationProcess
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
