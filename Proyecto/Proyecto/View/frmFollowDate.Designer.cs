@@ -53,6 +53,7 @@ namespace Proyecto.View
             this.btnExportFollowDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExportFollowDate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExportFollowDate.UseVisualStyleBackColor = true;
+            this.btnExportFollowDate.Click += new System.EventHandler(this.btnExportFollowDate_Click);
             // 
             // lblAppointment
             // 
