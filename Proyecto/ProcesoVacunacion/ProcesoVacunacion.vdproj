@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_B77D6FF416464714AAF4E778DD1AB587"
+        "MsmKey" = "8:_54B22E43542A480FBA0716BC025349D5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E546AD08B4EF43F787CFFE9ABD4B923A"
+        "MsmKey" = "8:_FFAEC17E667B486EBD89489B71CB5F54"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +43,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -59,6 +67,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -76,11 +92,21 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_606C57D4F314439EA7F5FD71AA52C00E"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
             }
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E546AD08B4EF43F787CFFE9ABD4B923A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FFAEC17E667B486EBD89489B71CB5F54"
             {
             "SourcePath" = "8:..\\..\\..\\..\\..\\..\\..\\Downloads\\Logo-Bukele.ico"
             "TargetName" = "8:Logo-Bukele.ico"
@@ -288,7 +314,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CD65A0529EBF4BE198A6F054D115167B"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_63F7745D891141DB9A28DAC8F82F55E8"
             {
             "Name" = "8:Proceso_Vacunacion"
             "Arguments" = "8:"
@@ -296,13 +322,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B77D6FF416464714AAF4E778DD1AB587"
+            "Target" = "8:_54B22E43542A480FBA0716BC025349D5"
             "Folder" = "8:_158974FAF1F6454388C1DB9244D6097A"
             "WorkingFolder" = "8:_04415F4802244740B48EDC44A31909DF"
-            "Icon" = "8:_E546AD08B4EF43F787CFFE9ABD4B923A"
+            "Icon" = "8:_FFAEC17E667B486EBD89489B71CB5F54"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CDF3D6F29FAB451BAE4E724ABBE72497"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_925A65671B684C23AB38116D358CBDDE"
             {
             "Name" = "8:Proceso_Vacunacion"
             "Arguments" = "8:"
@@ -310,10 +336,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_E5D464DB019F48B183EE815E9DA70609"
+            "Target" = "8:_54B22E43542A480FBA0716BC025349D5"
             "Folder" = "8:_E5D464DB019F48B183EE815E9DA70609"
-            "WorkingFolder" = "8:_E5D464DB019F48B183EE815E9DA70609"
-            "Icon" = "8:_E546AD08B4EF43F787CFFE9ABD4B923A"
+            "WorkingFolder" = "8:_04415F4802244740B48EDC44A31909DF"
+            "Icon" = "8:_FFAEC17E667B486EBD89489B71CB5F54"
             "Feature" = "8:"
             }
         }
@@ -715,7 +741,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B77D6FF416464714AAF4E778DD1AB587"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_54B22E43542A480FBA0716BC025349D5"
             {
             "SourcePath" = "8:..\\Proyecto\\obj\\Debug\\net5.0-windows\\apphost.exe"
             "TargetName" = "8:"

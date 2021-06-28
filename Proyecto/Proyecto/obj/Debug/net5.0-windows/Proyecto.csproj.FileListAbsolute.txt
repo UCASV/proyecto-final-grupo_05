@@ -334,7 +334,6 @@ C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Pro
 C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.csprojAssemblyReference.cache
 C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.Properties.Resources.resources
 C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmCabinInformation.resources
 C:\Users\gerar\Pictures\Workspace\POO\Proyecto Final\proyecto-final-grupo_05\Proyecto\Proyecto\obj\Debug\net5.0-windows\Proyecto.View.frmEmployeeInformation.resources
