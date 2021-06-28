@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto.Covid19_Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,16 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using iTextSharp.text;
-using Proyecto.Covid19_Context;
 
 namespace Proyecto.View
 {
     public partial class frmSecondDose : Form
     {
-        public frmSecondDose()
+        public string user { get; set; }
+        public frmSecondDose(string user4)
         {
             InitializeComponent();
+            this.user = user4;
         }
 
         private void frmSecondDose_Load(object sender, EventArgs e)
@@ -51,6 +52,7 @@ namespace Proyecto.View
                 List<Citum> restrict = cita.Where(c => c.IdCiudadano == txtScndDse_dui.Text).ToList();
                 List<Ciudadano> citizens = db.Ciudadanos.ToList();
                 List<Ciudadano> exist = citizens.Where(u => u.Dui == txtScndDse_dui.Text).ToList();
+                List<Lugar> places = db.Lugars.ToList();
                 if (exist.Count() > 0 && identifyCita.Count() > 0 && restrict.Count() < 2)
                 {
                     if (verifcation)
@@ -58,30 +60,44 @@ namespace Proyecto.View
                         DateTime newDateCitum = Convert.ToDateTime("2020-01-01 13:00");
                         string duivalidatorio = txtScndDse_dui.Text;
                         int idCita;
+                        int idLugars=0;
+                        string NamePlace = "";
                         //obtenemos la fecha de la primera cita correspondiente al dui
                         foreach (var element in cita)
                         {
                             if (duivalidatorio == element.IdCiudadano)
                             {
                                 newDateCitum = element.FechaHora;
+                                idLugars = element.IdLugar;
+                            }
+                        }
+                        foreach (var element in places)
+                        {
+                            if (element.Id == idLugars)
+                            {
+                                NamePlace = element.Lugar1;
                             }
                         }
                         //agregamos los dias para la proxima cita
                         newDateCitum = newDateCitum.AddDays(45);
 
-                        //randomizador para seleccionar lugar donde sera la proxima cita y el empleado que atiende la cita
-                        Random rdm = new Random();
-                        int a = rdm.Next(1, 5);
-                        int b = rdm.Next(1, 10);
+                        //Obteniendo el identificador del empleado
+                        int idEmploye = 0;
+                        List<Empleado> employe = db.Empleados.ToList();
+                        foreach(var element in employe)
+                        {
+                            if(element.Usuario == user)
+                            {
+                                idEmploye = element.Identificador;
+                            }
+                        }
 
-
-                        
                         Citum unCitum = new Citum();
                         {
                             unCitum.FechaHora = newDateCitum;
                             unCitum.IdentificadorCita = 2;
-                            unCitum.IdLugar = a;
-                            unCitum.IdentificadorEmpleado = b;
+                            unCitum.IdLugar = idLugars;
+                            unCitum.IdentificadorEmpleado = idEmploye;
                             unCitum.IdCiudadano = txtScndDse_dui.Text;
                         };
 
@@ -99,7 +115,6 @@ namespace Proyecto.View
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        
         }
     }
 }

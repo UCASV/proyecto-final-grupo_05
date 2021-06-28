@@ -1,4 +1,5 @@
-﻿using Proyecto.View;
+﻿using Microsoft.Data.SqlClient;
+using Proyecto.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,22 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Proyecto.Covid19_Context;
-using Microsoft.Data.SqlClient;
 
 namespace Proyecto
 {
     public partial class frmLogin : Form
     {
-
-
         public frmLogin()
         {
             InitializeComponent();
         }
 
         //cadena de conexion
-        SqlConnection connection = new SqlConnection("server=LAPTOP-C1BFNSLL\\SQLEXPRESS;database=COVID19_DATABASE; INTEGRATED SECURITY=true");
+        SqlConnection connection = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=COVID19_DATABASE;Trusted_Connection=True;");
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -37,23 +34,22 @@ namespace Proyecto
             //obtener resultado
             SqlDataReader outcome = employee.ExecuteReader();
 
+            string user = txtUser.Text;
             //enviar datos a la base de datos 
             if (outcome.Read() == true)
             {
                 connection.Close(); //cerrando la conexion
-                frmMainMenu main = new frmMainMenu();
+                frmMainMenu main = new frmMainMenu(user);
                 main.Show();
-                //this.Hide();
-
+                this.Hide();
             }
             else if (outcome.Read() == false)
             {
+                connection.Close();
                 MessageBox.Show("¡El usuario no existe!", "Vacunacion Covid-19",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //this.Hide();
             }
         }
-
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {

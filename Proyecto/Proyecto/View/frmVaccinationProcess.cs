@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto.Covid19_Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Proyecto.Covid19_Context;
-using System.Data.SqlClient;
-using Microsoft.Data.SqlClient;
 
 namespace Proyecto.View
 {
@@ -19,8 +17,6 @@ namespace Proyecto.View
         {
             InitializeComponent();
         }
-
-
 
         private void frmVaccinationProcess_Load(object sender, EventArgs e)
         {
@@ -51,6 +47,15 @@ namespace Proyecto.View
             }
         }
 
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            txtVacProcss_dui.Text = "";
+            dTp_VacPrcss_entry.Value = DateTime.Today;
+            dTp_VacPrcss_exit.Value = DateTime.Today;
+            nUdVacProcss_minute.Value = 0;
+            cmbVacProcss_Effects.SelectedIndex = 9;
+        }
+
         private void btnVacProcss_RegistrData_Click(object sender, EventArgs e)
         {
             bool verifcation = txtVacProcss_dui.Text.Length == 10;
@@ -75,7 +80,7 @@ namespace Proyecto.View
                         switch (cmbVacProcss_Effects.SelectedIndex)
                         {
                             case 0:
-                                idEfect = 1; 
+                                idEfect = 1;
                                 break;
                             case 1:
                                 idEfect = 2;
@@ -135,15 +140,5 @@ namespace Proyecto.View
                 }
             }
         }
-
-        private void btnClean_Click(object sender, EventArgs e)
-        {
-            txtVacProcss_dui.Text = "";
-            dTp_VacPrcss_entry.Value = DateTime.Today;
-            dTp_VacPrcss_exit.Value = DateTime.Today;
-            nUdVacProcss_minute.Value = 0;
-            cmbVacProcss_Effects.SelectedIndex = 9;
-        }
     }
-
 }

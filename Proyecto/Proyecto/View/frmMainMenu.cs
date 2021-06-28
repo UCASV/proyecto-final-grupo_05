@@ -13,16 +13,18 @@ namespace Proyecto.View
 {
     public partial class frmMainMenu : Form
     {
+        public string user { get; set; }
         private Button currentButton;
         private Random random;
         private int tempIndex;
         private Form activeForm;
         
-        public frmMainMenu()
+        public frmMainMenu(string user2)
         {
             InitializeComponent();
             random = new Random();
-            this.Text = string.Empty;
+            this.user = user2;
+            
         }
 
         //metodo para cambiar de colores aleatoriamente la interfaz 
@@ -90,7 +92,7 @@ namespace Proyecto.View
 
         private void btnProcessDate_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmProcessDate(),sender);
+            OpenChildForm(new frmProcessDate(user),sender);
             lblTitle.Text = "Procesar Cita";
             lblTitle.Location = new Point(300,12);
             this.Show();
@@ -114,7 +116,7 @@ namespace Proyecto.View
 
         private void btnSecondDose_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmSecondDose(), sender);
+            OpenChildForm(new frmSecondDose(user), sender);
             lblTitle.Text = "Cita de Segunda Dosis";
             lblTitle.Location = new Point(220, 12);
             this.Show();
@@ -122,7 +124,7 @@ namespace Proyecto.View
 
         private void btnEmployeesInformation_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmEmployeeInformation(), sender);
+            OpenChildForm(new frmEmployeeInformation(user), sender);
             lblTitle.Text = "Información de Empleados";
             lblTitle.Location = new Point(180, 12);
             this.Show();

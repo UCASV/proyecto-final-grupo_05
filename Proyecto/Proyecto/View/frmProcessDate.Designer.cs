@@ -42,6 +42,7 @@ namespace Proyecto.View
             this.txtDirection = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExport = new System.Windows.Forms.Button();
             this.nudIdentificator = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,16 +50,16 @@ namespace Proyecto.View
             this.clbDiseases = new System.Windows.Forms.CheckedListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnClean = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdentificator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.Image = global::Proyecto.Properties.Resources.ico_user;
             this.btnRegister.Location = new System.Drawing.Point(515, 233);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(241, 75);
@@ -174,10 +175,21 @@ namespace Proyecto.View
             this.txtEmail.Size = new System.Drawing.Size(315, 23);
             this.txtEmail.TabIndex = 13;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto.Properties.Resources.Img_Proceso_Cita;
+            this.pictureBox1.Location = new System.Drawing.Point(304, 301);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 161);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnExport
             // 
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExport.Image = global::Proyecto.Properties.Resources.ico_pdf;
             this.btnExport.Location = new System.Drawing.Point(515, 329);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(241, 75);
@@ -244,6 +256,7 @@ namespace Proyecto.View
             // 
             this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClean.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClean.Image = global::Proyecto.Properties.Resources.ico_clean;
             this.btnClean.Location = new System.Drawing.Point(515, 419);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(241, 52);
@@ -254,20 +267,11 @@ namespace Proyecto.View
             this.btnClean.UseVisualStyleBackColor = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(289, 292);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(179, 160);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmProcessDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 474);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.clbDiseases);
@@ -275,6 +279,7 @@ namespace Proyecto.View
             this.Controls.Add(this.label8);
             this.Controls.Add(this.nudIdentificator);
             this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtDirection);
@@ -291,9 +296,9 @@ namespace Proyecto.View
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmProcessDate";
             this.Load += new System.EventHandler(this.frmProcessDate_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudIdentificator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAge)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,6 +318,7 @@ namespace Proyecto.View
         private System.Windows.Forms.TextBox txtDirection;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.NumericUpDown nudIdentificator;
         private System.Windows.Forms.Label label8;
@@ -320,6 +326,5 @@ namespace Proyecto.View
         private System.Windows.Forms.CheckedListBox clbDiseases;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClean;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

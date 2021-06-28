@@ -178,6 +178,7 @@ namespace Proyecto.View
             // 
             this.btnVacProcss_RegistrData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVacProcss_RegistrData.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVacProcss_RegistrData.Image = global::Proyecto.Properties.Resources.ico_registrar;
             this.btnVacProcss_RegistrData.Location = new System.Drawing.Point(557, 377);
             this.btnVacProcss_RegistrData.Name = "btnVacProcss_RegistrData";
             this.btnVacProcss_RegistrData.Size = new System.Drawing.Size(195, 70);
@@ -191,6 +192,7 @@ namespace Proyecto.View
             // 
             this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClean.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClean.Image = global::Proyecto.Properties.Resources.ico_clean;
             this.btnClean.Location = new System.Drawing.Point(557, 275);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(195, 70);

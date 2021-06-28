@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZhLz3SwwFygcHNn8Jc3tH8RJwjFmisfJRj9VYi9g45nhzf8XJPR8ORgsu42VKtqLsXh5rl7deIVLqktXEPQKpA==",
+  "dgSpecHash": "BtdlJ07U1PMFfhuI0wuX4fmP/FAVEKzVuwzG0e+FCXXAjUn45KSuS6PJkfuqEYC78I07vEjflYK481XDWSwu9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+  "projectFilePath": "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\Proyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerar\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\gerar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -104,12 +104,6 @@
     "C:\\Users\\gerar\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -36,10 +36,8 @@ namespace Proyecto.View
             this.label2 = new System.Windows.Forms.Label();
             this.lblScndDse_Info = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtScndDse_dui
@@ -54,11 +52,14 @@ namespace Proyecto.View
             // 
             this.btnScndDse_Verify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScndDse_Verify.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnScndDse_Verify.Location = new System.Drawing.Point(55, 162);
+            this.btnScndDse_Verify.Image = global::Proyecto.Properties.Resources.ico_verification;
+            this.btnScndDse_Verify.Location = new System.Drawing.Point(132, 278);
             this.btnScndDse_Verify.Name = "btnScndDse_Verify";
-            this.btnScndDse_Verify.Size = new System.Drawing.Size(140, 61);
+            this.btnScndDse_Verify.Size = new System.Drawing.Size(196, 89);
             this.btnScndDse_Verify.TabIndex = 1;
             this.btnScndDse_Verify.Text = "Verificar";
+            this.btnScndDse_Verify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnScndDse_Verify.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnScndDse_Verify.UseVisualStyleBackColor = true;
             this.btnScndDse_Verify.Click += new System.EventHandler(this.btnScndDse_Verify_Click);
             // 
@@ -77,7 +78,7 @@ namespace Proyecto.View
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtScndDse_dui);
-            this.panel1.Location = new System.Drawing.Point(55, 88);
+            this.panel1.Location = new System.Drawing.Point(92, 178);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(289, 58);
             this.panel1.TabIndex = 3;
@@ -86,47 +87,36 @@ namespace Proyecto.View
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(55, 44);
+            this.label2.Location = new System.Drawing.Point(55, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(363, 25);
+            this.label2.Size = new System.Drawing.Size(361, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Ingrese DUI para verificar su segunda dosis:";
+            this.label2.Text = "Ingrese el DUI para agendar la segunda cita";
             // 
             // lblScndDse_Info
             // 
             this.lblScndDse_Info.AutoSize = true;
             this.lblScndDse_Info.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblScndDse_Info.Location = new System.Drawing.Point(55, 292);
+            this.lblScndDse_Info.Location = new System.Drawing.Point(55, 342);
             this.lblScndDse_Info.Name = "lblScndDse_Info";
             this.lblScndDse_Info.Size = new System.Drawing.Size(0, 25);
             this.lblScndDse_Info.TabIndex = 7;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Proyecto.Properties.Resources._1039373;
-            this.pictureBox1.Location = new System.Drawing.Point(489, 192);
+            this.pictureBox1.Image = global::Proyecto.Properties.Resources.img_vacunation;
+            this.pictureBox1.Location = new System.Drawing.Point(440, 29);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 257);
+            this.pictureBox1.Size = new System.Drawing.Size(348, 433);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Proyecto.Properties.Resources.logo_covid__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(434, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(354, 154);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
             // 
             // frmSecondDose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 474);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblScndDse_Info);
             this.Controls.Add(this.label2);
@@ -139,7 +129,6 @@ namespace Proyecto.View
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,6 +143,5 @@ namespace Proyecto.View
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblScndDse_Info;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

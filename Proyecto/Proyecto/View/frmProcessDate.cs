@@ -16,11 +16,13 @@ namespace Proyecto.View
 {
     public partial class frmProcessDate : Form
     {
+        public string user { get; set; }
         private string NamePlace;
         private DateTime date;
-        public frmProcessDate()
+        public frmProcessDate(string user3)
         {
             InitializeComponent();
+            this.user = user3;
         }
 
         private void frmProcessDate_Load(object sender, EventArgs e)
@@ -70,12 +72,17 @@ namespace Proyecto.View
                 string phone = txtPhone.Text;
                 string @email = txtEmail.Text;
                 int identificator = (int)nudIdentificator.Value;
-                //Se necesita el id del gestor de alguna manera
-                //momentaneamente sera id del trabajador 1 *Dato quemado*
-                int id_employee = 1;
+                int id_employee = 0;
 
                 using (var db = new COVID19_DATABASEContext())
                 {
+                    //Obteniendo el Identificador del empleado
+                    List<Empleado> people = db.Empleados.ToList();
+                    foreach(var element in people)
+                    {
+                        if(element.Usuario == user)
+                            id_employee = element.Identificador;
+                    }
                     List<Ciudadano> citizens = db.Ciudadanos.ToList();
                     List<Lugar> places = db.Lugars.ToList();
                     List<Ciudadano> exist = citizens.Where(u => u.Dui == id).ToList();
@@ -89,7 +96,7 @@ namespace Proyecto.View
                         if (nudAge.Value >= 60 || nudIdentificator.Value != 0 || (clbDiseases.GetItemChecked(6) == false && nudAge.Value >=18))
                         {
                             //Añadiendolos datos del ciudadno a la BD
-                            Ciudadano people = new Ciudadano
+                            Ciudadano Newpeople = new Ciudadano
                             {
                                 Dui = id,
                                 Nombre = name,
@@ -100,7 +107,7 @@ namespace Proyecto.View
                                 IdentificadorEmpleado = id_employee
                             };
 
-                            db.Add(people);
+                            db.Add(Newpeople);
                             db.SaveChanges();
 
                             for (int i=0; i < clbDiseases.Items.Count; i++)
@@ -202,9 +209,7 @@ namespace Proyecto.View
                         iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
                     iTextSharp.text.Font fuente2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 18,
                         iTextSharp.text.Font.BOLD, BaseColor.BLACK);
-                    iTextSharp.text.Paragraph title = new iTextSharp.text.Paragraph("INFORMACIÓN DE EMPLEADOS", fuente2);
-                    title.Alignment = Element.ALIGN_CENTER;
-                    doc.Add(title);
+                    doc.Add(new Paragraph("                      CITA PARA PROCESO DE VACUNACION COVID-19",fuente2));
                     doc.Add(Chunk.NEWLINE);
                     doc.Add(new Paragraph("                 Nombre: " + txtNombre.Text,fuente));
                     doc.Add(Chunk.NEWLINE);

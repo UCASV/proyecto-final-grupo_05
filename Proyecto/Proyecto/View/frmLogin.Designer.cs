@@ -41,7 +41,7 @@ namespace Proyecto
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Proyecto.Properties.Resources.logo_covid;
+            this.pictureBox1.Image = global::Proyecto.Properties.Resources.img_frm_Login;
             this.pictureBox1.Location = new System.Drawing.Point(12, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 263);

@@ -120,7 +120,7 @@ namespace Proyecto.View
             this.btnEmployeesInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmployeesInformation.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEmployeesInformation.ForeColor = System.Drawing.Color.White;
-            this.btnEmployeesInformation.Image = global::Proyecto.Properties.Resources._3271220;
+            this.btnEmployeesInformation.Image = global::Proyecto.Properties.Resources.ico_InfoEmployee;
             this.btnEmployeesInformation.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnEmployeesInformation.Location = new System.Drawing.Point(0, 330);
             this.btnEmployeesInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -164,7 +164,7 @@ namespace Proyecto.View
             this.btnVaccinationProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVaccinationProcess.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnVaccinationProcess.ForeColor = System.Drawing.Color.White;
-            this.btnVaccinationProcess.Image = global::Proyecto.Properties.Resources.COVID_19_vaccine_icon;
+            this.btnVaccinationProcess.Image = global::Proyecto.Properties.Resources.ico_ProcessVac;
             this.btnVaccinationProcess.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnVaccinationProcess.Location = new System.Drawing.Point(0, 206);
             this.btnVaccinationProcess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -186,7 +186,7 @@ namespace Proyecto.View
             this.bntFollowDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntFollowDate.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bntFollowDate.ForeColor = System.Drawing.Color.White;
-            this.bntFollowDate.Image = global::Proyecto.Properties.Resources.image;
+            this.bntFollowDate.Image = global::Proyecto.Properties.Resources.ico_FollowDt;
             this.bntFollowDate.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.bntFollowDate.Location = new System.Drawing.Point(0, 144);
             this.bntFollowDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -208,7 +208,7 @@ namespace Proyecto.View
             this.btnProcessDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcessDate.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnProcessDate.ForeColor = System.Drawing.Color.White;
-            this.btnProcessDate.Image = global::Proyecto.Properties.Resources._1431483;
+            this.btnProcessDate.Image = global::Proyecto.Properties.Resources.ico_ProcessDate;
             this.btnProcessDate.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnProcessDate.Location = new System.Drawing.Point(0, 82);
             this.btnProcessDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -234,7 +234,7 @@ namespace Proyecto.View
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Proyecto.Properties.Resources.logo_hero;
+            this.pictureBox1.Image = global::Proyecto.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(22, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -257,7 +257,7 @@ namespace Proyecto.View
             // 
             // btnClose
             // 
-            this.btnClose.BackgroundImage = global::Proyecto.Properties.Resources.close_grey;
+            this.btnClose.BackgroundImage = global::Proyecto.Properties.Resources.ico_close;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -293,7 +293,7 @@ namespace Proyecto.View
             // 
             // pctHome2
             // 
-            this.pctHome2.Image = global::Proyecto.Properties.Resources.Screenshot_2021_06_22_221330;
+            this.pctHome2.Image = global::Proyecto.Properties.Resources.img_gob;
             this.pctHome2.Location = new System.Drawing.Point(0, 457);
             this.pctHome2.Name = "pctHome2";
             this.pctHome2.Size = new System.Drawing.Size(815, 55);
@@ -303,7 +303,7 @@ namespace Proyecto.View
             // 
             // pctHome1
             // 
-            this.pctHome1.Image = global::Proyecto.Properties.Resources._5921;
+            this.pctHome1.Image = global::Proyecto.Properties.Resources.img_Home;
             this.pctHome1.Location = new System.Drawing.Point(6, 2);
             this.pctHome1.Name = "pctHome1";
             this.pctHome1.Size = new System.Drawing.Size(804, 456);

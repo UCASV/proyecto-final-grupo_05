@@ -1,8 +1,12 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Proyecto.Covid19_Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +24,8 @@ namespace Proyecto.View
         private void frmCabinInformation_Load(object sender, EventArgs e)
         {
             LoadTheme();
-        }
+            InformationCabin();
+        } 
         //Metodo para cambiar de colores los botones
         private void LoadTheme()
         {
@@ -36,12 +41,30 @@ namespace Proyecto.View
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void InformationCabin()
         {
-            using (var context = new Covid19_Context.COVID19_DATABASEContext())
+            using (var context = new COVID19_DATABASEContext())
             {
                 var newDS = context.Cabinas.ToList();
-                dataGridView1.DataSource = newDS;
+                var jobs = context.Empleados.ToList();
+                string boss = "";
+                dgvInformation.Rows.Clear();
+                foreach (var element in newDS)
+                {
+                    foreach(var people in jobs)
+                    {
+                        if (element.Id == people.IdCabina && people.IdTipo == 2)
+                            boss = people.Nombre;
+                    }
+                    List<Empleado>emp  = element.Empleados.ToList();
+                    dgvInformation.Rows.Add(
+                            element.Id,
+                            element.Direccion,
+                            element.Telefono,
+                            element.Email,
+                            boss
+                                );
+                }                
             }
         }
     }

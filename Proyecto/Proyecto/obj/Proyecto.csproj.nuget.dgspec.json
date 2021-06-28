@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj": {}
+    "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\Proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj": {
+    "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+        "projectUniqueName": "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
+        "projectPath": "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\Proyecto.csproj",
         "packagesPath": "C:\\Users\\gerar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\obj\\",
+        "outputPath": "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
