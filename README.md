@@ -35,9 +35,9 @@ Los softwares, las versiones, sistemas operativos y paquetes externos que se han
    >1. Microsoft.EntityFramework 5.0.6
    >2. Microsoft.EntityFramework.SqlServer 5.0.6
    >3. Microsoft.EntityFramework.Design
-
-4. **iTextSharp**
-5. **Microsoft Visual Studio Installer Projects**
+   >4. iTextSharp
+   >5. Microsoft Visual Studio Installer Projects
+   
 ## *Instalación*
 A continuación se especificaran los pasos a seguir junto a los requerimientos necesarios para obtener una 
 instalacion correcta.
