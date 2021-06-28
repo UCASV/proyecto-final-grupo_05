@@ -148,7 +148,6 @@ INSERT INTO TIPO VALUES('Seguridad');
 --INSERTANDO VALORES A TABLA CABINA
 INSERT INTO CABINA VALUES('Hospital El Salvador ,Ave.La revolución 222,Colonia San Benito San Salvador','2594-2100','HospitalElSalvador@salud.gob.sv');
 INSERT INTO CABINA VALUES('Carretera Panamericana y Calle Chiltiupan Antiguo Cuscatlán, La Libertad Centroamérica, Cd Merliot','2249-3800','CabinaLaGranvia@salud.gob.sv');
-INSERT INTO CABINA VALUES('Unidad de salud,Segunda calle oriente, Lourdes Colón, La Libertad','7924-6281','FosaludLourdes@salud.gob.sv');
 INSERT INTO CABINA VALUES('25 AV.Norte,entre Primera Calle Poniente y Alameda Roosevelt. San Salvador, El Salvador, C.A.','2231-9200','HospitalRosales@salud.gob.sv');
 INSERT INTO CABINA VALUES('Final 25 Avenida Norte y 27 Calle Poniente San Salvador El Salvador','2225-4114','HospitalBloom@salud.gob.sv');
 

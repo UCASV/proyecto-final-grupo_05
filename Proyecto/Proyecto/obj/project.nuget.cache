@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BtdlJ07U1PMFfhuI0wuX4fmP/FAVEKzVuwzG0e+FCXXAjUn45KSuS6PJkfuqEYC78I07vEjflYK481XDWSwu9w==",
+  "dgSpecHash": "oYnDkrW+cFNmU0WlrBVtFmBcwT0Sb9ZESMy8wqbcVBOm3X9sRu6jsoP1prnRBngfMxPtwa8DpncawlFlxqKnyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerar\\Pictures\\Workspace\\Practicas C#\\real proyecto\\Proyecto\\Proyecto\\Proyecto.csproj",
+  "projectFilePath": "C:\\Users\\gerar\\Pictures\\Workspace\\POO\\Proyecto Final\\proyecto-final-grupo_05\\Proyecto\\Proyecto\\Proyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerar\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\gerar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
