@@ -3,7 +3,7 @@
 
 Los softwares, las versiones, sistemas operativos y paquetes externos que se han utilizado en la creacion de este programa son los siguientes.
 
-## **Softwares.**
+### **Softwares.**
 
  1. **SQL SERVER EXPRESS EDITION**
    
@@ -17,12 +17,12 @@ Los softwares, las versiones, sistemas operativos y paquetes externos que se han
    
    >Visual Studio permite a los desarrolladores crear sitios y aplicaciones web, así como servicios web en cualquier entorno compatible con la plataforma .NET (a partir de la versión .NET 2002). Así, se pueden crear aplicaciones que se comuniquen entre estaciones de trabajo, páginas web, dispositivos móviles, dispositivos embebidos y videoconsolas, entre otros.
 
-## **Sistemas Operativos**
+### **Sistemas Operativos**
 
 1. **Windows 10**
     >Windows 10 es el actual sistema operativo desarrollado por Microsoft como parte de la familia de sistemas operativos Windows NT.​ Fue dado a conocer oficialmente en septiembre de 2014, seguido por una breve presentación de demostración en la conferencia Build 2014.
 
-## **Paquetes Externos**
+### **Paquetes Externos**
 
 1. **.NET 5.0**
    >.NET es un framework informático administrado, gratuito y de código abierto para los sistemas operativos Windows, Linux y macOS. ​ Es un sucesor multiplataforma de .NET Framework.​​
