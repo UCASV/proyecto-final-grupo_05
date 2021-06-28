@@ -42,7 +42,7 @@ Los softwares, las versiones, sistemas operativos y paquetes externos que se han
 A continuación se especificaran los pasos a seguir junto a los requerimientos necesarios para obtener una 
 instalacion correcta.
 
-## *Requerimientos.*
+### *Requerimientos.*
 
 1. *Fremework 4.8*
 >Contar con el parquete de framework 4.8
@@ -53,7 +53,7 @@ instalacion correcta.
 3. *Sql Server Express*
 >Tener instalado Sql Server en su version Express para crear la base de datos
 
-## *Proceso de instalacion*
+### *Proceso de instalacion*
 
 *Paso 1*
 >Abrir el scrypt de la base de datos llamado "Query_DBCovid-19".
