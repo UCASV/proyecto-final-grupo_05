@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Proyecto.Covid19_Context;
 using Proyecto.View;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,50 @@ namespace Proyecto
             //enviar datos a la base de datos 
             if (outcome.Read() == true)
             {
+                //Añadiendo la fecha y hora a la ingreso el gestor
+                using (var db = new COVID19_DATABASEContext())
+                {
+                    List<Empleado> employe = db.Empleados.ToList();
+
+                    //Obteniendo id cabina del gestor 
+                    int idCabin = 0;
+                    int idEmploye = 0;
+                    foreach (var element in employe)
+                    {
+                        if (element.Usuario == user)
+                        {
+                            idCabin = element.IdCabina;
+                            idEmploye = element.Identificador;
+                        }
+                    }
+
+                    //Guardadno el registro
+                    Historial historial = new Historial
+                    {
+                        FechaHora = DateTime.Now,
+                        IdCabina = idCabin
+                    };
+
+                    db.Add(historial);
+                    db.SaveChanges();
+
+                    //Obteniendo ID tabla HISTORIAL 
+                    List<Historial> register = db.Historials.ToList();
+                    int idHistorial = 0;
+                    foreach(var element in register)
+                    {
+                        if (element.IdCabina == idCabin)
+                            idHistorial = element.Id;
+                    }
+                    //Rellenando datos tabla EMPLEADOXHISTORIAL
+                    Empleadoxhistorial EmpxHist = new Empleadoxhistorial
+                    {
+                        IdEmpleado = idEmploye,
+                        IdHistorial = idHistorial
+                    };
+                    db.Add(EmpxHist);
+                    db.SaveChanges();
+                }
                 connection.Close(); //cerrando la conexion
                 frmMainMenu main = new frmMainMenu(user);
                 main.Show();
